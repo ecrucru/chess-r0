@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Initial ELO ranking at chess by ecrucru</title>
+	<script src="chess-r0.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+</head>
+<body>
+	<h1>Calculate your initial ELO rating at chess</h1>
+
+	<table>
+		<tr>
+			<th>ELO of the <ins>rated</ins> opponents</th>
+			<th>Your score</th>
+		</tr>
+		<tr>
+			<td><textarea id="chess0_opponents" class="chess0_input" onFocus="this.select()">1550
+1420
+1350
+1290
+1080</textarea></td>
+			<td><textarea id="chess0_scores" class="chess0_input" onFocus="this.select()">0
+0.5
+0
+0.5
+1</textarea></td>
+		</tr>
+	</table>
+	<p><input id="chess0_incremental" type="checkbox" /> ELO is changed after each game</p>
+	<p><input id="chess0_submit" type="submit" onClick="chess0_ui()" value="Calculate" /></p>
+</body>
+</html>
